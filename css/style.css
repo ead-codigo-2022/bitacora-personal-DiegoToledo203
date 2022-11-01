@@ -1,37 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2? family=Alegreya+Sans:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 
-body{
-  background-color: cornflowerblue;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
 
-
-h1 { 
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 2rem;
-  margin-left: auto;
-	margin-right: auto;
+body {
+  font-family: 'Roboto Mono', monospace;
 }
 
-p { 
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+.icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
-.lista-1{
-  font-family: 'Alegreya Sans', sans-serif;
+.icon-embed2 {
+  width: 1.25em;
 }
 
-li{
-  font-family: 'Alegreya Sans', sans-serif;
+.icon_2 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
-.imagen-1{
-  border: 1rem;
-  border-color: black;
+header {
+  background: rgb(241, 219, 210);
+  width: auto;
+  margin: 0px;
+  z-index: 40px;
+  display: flex;
+  justify-content:flex-end ;
+
+}
+
+nav ul li a {
+  display: flex; 
+  flex-direction: row;
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+
+
+nav ul li {
+  float: right;
+  text-align: right;
+}
+
+em {
+  position: static;
+  margin: auto;
+}
+
+.queso {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(auto, auto) 1fr;
+  grid-template-rows: 100px auto 100px;
+  max-width: 90%;
+  margin: auto;
+  line-height: 27px;
+}
+
+.container > * {
+  min-height: 100px;
+  min-width: 300px;
+  padding: 1rem;
+  margin-top: 30px;
+}
+
+.logo{
+  grid-column:1/2;
+  grid-row:1/2;
+}
+
+h1 {
+  width:500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  background: rgb(241, 219, 210);
+  line-height: 27px;
+  margin: 0.3em;
+}
+
+h3{
+  line-height: 50px;
+}
+
+.ventajas {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-right: 10px;
+  margin-block-start: 4rem;
+  
+}
+
+.index {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-block-start: 4rem;
+}
+
+.index h2 p {
+  margin-top: 30px;  
+}
+
+a{
+  color: black;
+}
+
+
+footer {
+  background: black;
+  color:white;
+  font-size: 7px;
+  width: 100%;
+}
+
+.h_footer{
+  font-size: medium;
+  text-align: start;
+}
+
+.icon4 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
